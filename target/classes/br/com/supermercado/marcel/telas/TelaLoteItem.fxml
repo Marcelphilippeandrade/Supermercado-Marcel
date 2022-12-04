@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane fx:id="flowPaneLoteItem" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.supermercado.marcel.controller.LoteItemController">
+	<children>
+		<TabPane fx:id="tabPaneLoteItem" prefHeight="200.0" prefWidth="1000.0">
+			<tabs>
+				<Tab fx:id="tabLote" closable="false" text="Lote">
+					<content>
+						<AnchorPane fx:id="anchorPaneLote" minHeight="0.0" minWidth="0.0" prefHeight="161.0" prefWidth="560.0">
+							<children>
+								<TextField fx:id="textFildCodigoLote" layoutX="109.0" layoutY="25.0" prefHeight="31.0" prefWidth="305.0" />
+								<Label fx:id="labelCodigoLote" layoutX="38.0" layoutY="30.0" text="Código:">
+									<font>
+										<Font name="Arial" size="18.0" />
+									</font>
+								</Label>
+								<Button fx:id="btnCadastrarLote" layoutX="38.0" layoutY="101.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="31.0" prefWidth="107.0" text="Cadastrar">
+									<font>
+										<Font name="Arial" size="15.0" />
+									</font>
+								</Button>
+								<Button fx:id="btnLimparLote" layoutX="180.0" layoutY="101.0" mnemonicParsing="false" onAction="#limpar" prefHeight="31.0" prefWidth="118.0" text="Limpar" />
+                        		<Label fx:id="labelDataFabricacao" layoutX="473.0" layoutY="30.0" text="Data Fabricação:">
+                           			<font>
+                              			<Font name="Arial" size="18.0" />
+                           			</font>
+                        		</Label>
+                        		<DatePicker fx:id="datePikerLote" layoutX="624.0" layoutY="25.0" prefHeight="31.0" prefWidth="235.0" />
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="tabItem" closable="false" text="Item">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="161.0" prefWidth="577.0" />
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</FlowPane>
